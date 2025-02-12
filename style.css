@@ -36,6 +36,30 @@ header a {
   }
 }
 
+.hero {
+  position: relative;
+}
+
+.hero h1, .hero p {
+  color: #ffffff !important; /* Вернули белый цвет текста */
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.hero h1 {
+  top: 20%;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+}
+
+.hero p {
+  bottom: 10%;
+  font-size: 22px;
+}
+
 .hero img {
   width: 100%;
   height: auto;
