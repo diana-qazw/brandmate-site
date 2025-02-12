@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background: #4B5320; /* Сделаем фон тёмно-оливковым */
+  background: #4B5320; /* Оливковый фон */
   color: #fff;
   padding: 10px 20px;
   text-align: center;
@@ -80,11 +80,11 @@ header a {
 
 .services {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
   gap: 20px;
   padding: 20px;
-  flex-wrap: wrap;
 }
 
 .service-card {
@@ -93,6 +93,7 @@ header a {
   border-radius: 25px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   max-width: 300px;
+  flex: 1 1 250px;
   text-align: center;
   color: #F8F3E7;
   transition: transform 0.3s ease-in-out;
@@ -129,8 +130,8 @@ header a {
     padding: 20px;
   }
   .service-card {
-    width: 100%;
-    max-width: 300px;
+    width: 90%;
+    max-width: 350px;
     margin-bottom: 20px;
   }
   .btn {
