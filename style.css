@@ -38,26 +38,28 @@ header a {
 
 .hero {
   position: relative;
-}
-
-.hero h1, .hero p {
-  color: #ffffff !important; /* Вернули белый цвет текста */
-  position: absolute;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
 }
 
 .hero h1 {
-  top: 15%;
-  font-size: 200px; /* Увеличили заголовок в 2 раза */
+  color: #ffffff !important; /* Вернули белый цвет текста */
+  font-size: 120px; /* Вернули нормальный размер */
   text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: bold;
+  position: absolute;
+  top: 30%;
 }
 
 .hero p {
-  bottom: 10%;
-  font-size: 22px;
+  color: #ffffff !important;
+  font-size: 24px;
+  position: absolute;
+  top: 55%;
 }
 
 .hero img {
