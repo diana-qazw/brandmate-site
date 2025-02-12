@@ -49,7 +49,7 @@ header a {
 
 .hero h1 {
   top: 15%;
-  font-size: 100px; /* Увеличили размер заголовка */
+  font-size: 200px; /* Увеличили заголовок в 2 раза */
   text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: bold;
