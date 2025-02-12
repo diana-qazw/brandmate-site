@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background: #B0B0B0; /* Вернули серый цвет */
+  background: #B0B0B0; /* Серый цвет */
   color: #fff;
   padding: 10px 20px;
   text-align: center;
@@ -24,6 +24,7 @@ header a {
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
+  border-bottom: 2px dotted #ffffff; /* Вернули подчеркивание точками */
 }
 
 @media (max-width: 768px) {
@@ -33,49 +34,6 @@ header a {
     align-items: center;
     gap: 10px;
   }
-}
-
-.hero {
-  background: url('https://source.unsplash.com/1600x900/?marketing,business,advertising') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  height: auto;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  flex-direction: column;
-}
-
-.hero h1 {
-  font-size: 80px;
-  text-transform: uppercase;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #ffffff !important;
-  font-weight: bold;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  left: 0;
-}
-
-.hero p {
-  font-size: 22px;
-  color: #ffffff;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-.hero img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
 }
 
 .services {
@@ -92,8 +50,8 @@ header a {
   padding: 20px;
   border-radius: 25px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  flex: 1 1 250px;
+  max-width: 280px; /* Сделали карточки чуть уже */
+  flex: 1 1 230px;
   text-align: center;
   color: #F8F3E7;
   transition: transform 0.3s ease-in-out;
@@ -101,58 +59,4 @@ header a {
 
 .service-card:hover {
   transform: scale(1.05);
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #E5D19;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #7C7D80;
-  transition: background-color 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 40px;
-  }
-  .hero p {
-    font-size: 18px;
-  }
-  .services {
-    flex-direction: column;
-    padding: 20px;
-  }
-  .service-card {
-    width: 90%;
-    max-width: 350px;
-    margin-bottom: 20px;
-  }
-  .btn {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-  .hero {
-    min-height: 150px;
-  }
-  .hero h1 {
-    font-size: 30px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-  .btn {
-    padding: 10px 20px;
-  }
 }
