@@ -36,6 +36,13 @@ header a {
   }
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Ограничили максимальную высоту */
+  object-fit: cover;
+}
+
 .services {
   display: flex;
   flex-wrap: wrap;
